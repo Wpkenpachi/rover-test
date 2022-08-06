@@ -1,4 +1,4 @@
-const Coordinate = require("../src/Coordinate");
+const Coordinate = require("../src/domain/Coordinate");
 
 test('should create a coordinate', () => {
     const coordinate = new Coordinate(0, 0, 'N')

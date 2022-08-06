@@ -1,7 +1,7 @@
-const Coordinate = require("../src/Coordinate");
-const Rover = require("../src/Rover");
-const SpinLeft = require("../src/SpinLeft");
-const SpinRight = require("../src/SpinRight");
+const Coordinate = require("../src/domain/Coordinate");
+const Rover = require("../src/domain/Rover");
+const SpinLeft = require("../src/domain/SpinLeft");
+const SpinRight = require("../src/domain/SpinRight");
 
 test('should create a rover', () => {
     const coord = new Coordinate(0, 0, 'N')

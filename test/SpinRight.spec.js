@@ -1,5 +1,5 @@
-const Coordinate = require("../src/Coordinate");
-const SpinRight = require("../src/SpinRight");
+const Coordinate = require("../src/domain/Coordinate");
+const SpinRight = require("../src/domain/SpinRight");
 
 test('should exec spin right for all directions', () => {
     expect(new SpinRight(new Coordinate(0, 0, 'N')).exec()).toEqual(new Coordinate(0, 0, 'E'))

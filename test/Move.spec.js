@@ -1,5 +1,5 @@
-const Coordinate = require("../src/Coordinate");
-const Move = require("../src/Move");
+const Coordinate = require("../src/domain/Coordinate");
+const Move = require("../src/domain/Move");
 
 test('should create a move command for all directions', () => {
     expect(new Move(new Coordinate(0, 0, 'N')).exec()).toEqual(new Coordinate(0, 1, 'N'))
