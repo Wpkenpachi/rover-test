@@ -84,4 +84,4 @@ Obs: Put the text file to input commands, in the root path of the project and ex
     $ yarn start filename.txt
 
 ## Test
-    $ npx jest
+    $ yarn test
