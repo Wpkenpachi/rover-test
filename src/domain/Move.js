@@ -9,19 +9,23 @@ class Move extends Command {
     }
 
     exec() {
-        const { x, y, direction } = this.#coordinates
-        switch (direction) {
-            case 'N':
-                return new Coordinate(x, y + 1, direction)
+        try {
+            const { x, y, direction } = this.#coordinates
+            switch (direction) {
+                case 'N':
+                    return new Coordinate(x, y + 1, direction, this.#coordinates.grid)
+                
+                case 'E':
+                    return new Coordinate(x + 1, y, direction, this.#coordinates.grid)
+    
+                case 'S':
+                    return new Coordinate(x, y - 1, direction, this.#coordinates.grid)
             
-            case 'E':
-                return new Coordinate(x + 1, y, direction)
-
-            case 'S':
-                return new Coordinate(x, y - 1, direction)
-        
-            case 'W':
-                return new Coordinate(x - 1, y, direction)
+                case 'W':
+                    return new Coordinate(x - 1, y, direction, this.#coordinates.grid)
+            }
+        } catch (error) {
+            return this.#coordinates
         }
     }
 }

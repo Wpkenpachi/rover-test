@@ -9,19 +9,23 @@ class SpinRight extends Command {
     }
 
     exec() {
-        const { x, y, direction } = this.#coordinates
-        switch (direction) {
-            case 'N':
-                return new Coordinate(x, y, 'E')
+        try {
+            const { x, y, direction } = this.#coordinates
+            switch (direction) {
+                case 'N':
+                    return new Coordinate(x, y, 'E', this.#coordinates.grid)
+                
+                case 'E':
+                    return new Coordinate(x, y, 'S', this.#coordinates.grid)
+    
+                case 'S':
+                    return new Coordinate(x, y, 'W', this.#coordinates.grid)
             
-            case 'E':
-                return new Coordinate(x, y, 'S')
-
-            case 'S':
-                return new Coordinate(x, y, 'W')
-        
-            case 'W':
-                return new Coordinate(x, y, 'N')
+                case 'W':
+                    return new Coordinate(x, y, 'N', this.#coordinates.grid)
+            }
+        } catch (error) {
+            this.#coordinates
         }
     }
 }

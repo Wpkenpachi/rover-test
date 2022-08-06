@@ -1,118 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659759676296" clover="3.2.0">
-  <project timestamp="1659759676297" name="All files">
-    <metrics statements="83" coveredstatements="83" conditionals="44" coveredconditionals="43" methods="23" coveredmethods="23" elements="150" coveredelements="149" complexity="0" loc="83" ncloc="83" packages="2" files="8" classes="8"/>
-    <package name="domain">
-      <metrics statements="52" coveredstatements="52" conditionals="30" coveredconditionals="30" methods="12" coveredmethods="12"/>
-      <file name="Command.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Command.js">
-        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="5" count="19" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="5" type="stmt"/>
-      </file>
-      <file name="Coordinate.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Coordinate.js">
-        <metrics statements="8" coveredstatements="8" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
-        <line num="2" count="49" type="stmt"/>
-        <line num="8" count="49" type="cond" truecount="4" falsecount="0"/>
-        <line num="9" count="48" type="cond" truecount="4" falsecount="0"/>
-        <line num="10" count="47" type="cond" truecount="4" falsecount="0"/>
-        <line num="11" count="46" type="stmt"/>
-        <line num="12" count="46" type="stmt"/>
-        <line num="13" count="46" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
-      </file>
-      <file name="Move.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Move.js">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+<coverage generated="1659769950398" clover="3.2.0">
+  <project timestamp="1659769950398" name="All files">
+    <metrics statements="117" coveredstatements="114" conditionals="56" coveredconditionals="55" methods="31" coveredmethods="31" elements="204" coveredelements="200" complexity="0" loc="117" ncloc="117" packages="3" files="9" classes="9"/>
+    <package name="application">
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="RunCommands.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/application/RunCommands.js">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="cond" truecount="4" falsecount="0"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain">
+      <metrics statements="67" coveredstatements="64" conditionals="42" coveredconditionals="42" methods="15" coveredmethods="15"/>
+      <file name="Command.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Command.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="18" count="25" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+      </file>
+      <file name="Coordinate.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Coordinate.js">
+        <metrics statements="13" coveredstatements="13" conditionals="24" coveredconditionals="24" methods="1" coveredmethods="1"/>
+        <line num="2" count="69" type="stmt"/>
+        <line num="9" count="69" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="68" type="cond" truecount="4" falsecount="0"/>
+        <line num="11" count="67" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="66" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="65" type="stmt"/>
+        <line num="14" count="65" type="stmt"/>
+        <line num="15" count="65" type="stmt"/>
+        <line num="16" count="65" type="stmt"/>
+        <line num="17" count="65" type="stmt"/>
+        <line num="21" count="65" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="63" type="cond" truecount="4" falsecount="0"/>
+        <line num="26" count="7" type="stmt"/>
+      </file>
+      <file name="Move.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Move.js">
+        <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
       </file>
       <file name="Rover.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/Rover.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
       <file name="SpinLeft.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/SpinLeft.js">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-      </file>
-      <file name="SpinRight.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/SpinRight.js">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
+        <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
         <line num="7" count="7" type="stmt"/>
         <line num="8" count="6" type="stmt"/>
         <line num="12" count="6" type="stmt"/>
-        <line num="13" count="6" type="cond" truecount="4" falsecount="0"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+      </file>
+      <file name="SpinRight.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/domain/SpinRight.js">
+        <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
       </file>
     </package>
     <package name="infra">
       <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="13" methods="11" coveredmethods="11"/>
       <file name="CommandFileRepository.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/infra/CommandFileRepository.js">
         <metrics statements="23" coveredstatements="23" conditionals="12" coveredconditionals="11" methods="9" coveredmethods="9"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="5" type="cond" truecount="4" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="19" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="5" type="cond" truecount="4" falsecount="0"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="34" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="35" count="6" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="16" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
       </file>
       <file name="FileHandler.js" path="/home/wesleysantos/Área de Trabalho/scripts/foxbit/src/infra/FileHandler.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
       </file>
     </package>
   </project>

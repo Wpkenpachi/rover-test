@@ -4,7 +4,7 @@ const filepath = './cmd.txt';
 
 beforeAll(() => {
     fs.writeFileSync(filepath, "5 5\n1 2 N\nLLL\n3 3 E\nRRR");
-})
+});
 
 test('should create a filehander', () => {
     const filehandler = new FileHandler(filepath)
