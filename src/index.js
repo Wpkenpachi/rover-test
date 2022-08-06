@@ -5,8 +5,7 @@ const Move = require('./domain/Move')
 const Command = require("./domain/Command")
 const path = require('path')
 
-
-if (process.argv.length >= 2) {
+if (process.argv.length === 3 && process.argv[2].match(/.*\.txt/)) {
     const [_, __, fileArg] = process.argv;
     try {
         const filepath = path.resolve(process.cwd(), fileArg)
@@ -26,4 +25,4 @@ function main(filename) {
     return response
 }
 
-module.exports = main
+module.exports = { main }

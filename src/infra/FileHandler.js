@@ -1,12 +1,13 @@
 const fs = require('fs');
-const readline = require('readline');
+const path = require('path');
 
 class FileHandler {
     #file
     #lines = []
     constructor(filepath) {
-        if (!fs.existsSync(filepath)) throw new Error('File does not exists')
-        this.#file = fs.readFileSync(filepath, 'utf-8')
+        const fileExists = fs.existsSync(path.resolve(process.cwd(), filepath))
+        if (!fileExists) throw new Error('File does not exists')
+        this.#file = fs.readFileSync(path.resolve(process.cwd(), filepath), 'utf-8')
         this.#lines = this.#file.split(/\n/)
     }
 
