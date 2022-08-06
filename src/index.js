@@ -3,6 +3,18 @@ const SpinLeft = require('./domain/SpinLeft')
 const SpinRight = require('./domain/SpinRight')
 const Move = require('./domain/Move')
 const Command = require("./domain/Command")
+const path = require('path')
+
+
+if (process.argv.length >= 2) {
+    const [_, __, fileArg] = process.argv;
+    try {
+        const filepath = path.resolve(process.cwd(), fileArg)
+        main(filepath)
+    } catch (error) {
+        throw error
+    }
+}
 
 function main(filename) {
     Command.registerCommand('L', SpinLeft)

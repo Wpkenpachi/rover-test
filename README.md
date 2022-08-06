@@ -59,27 +59,29 @@ The output for each rover should be its final co-ordinates and
 heading.
 
 ## Test Input
-5 5
-1 2 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM
+5 5<br>
+1 2 N<br>
+LMLMLMLMM<br>
+3 3 E<br>
+MMRMMRMRRM<br>
 
 ## Expected Output
-1 3 N
-5 1 E
+1 3 N<br>
+5 1 E<br>
 
 ___
 
-## Approach
-to solve this problem i used a clean architecture approach to separate each layer of the system flow,
+## Solving Approach
+To solve this problem i used a clean architecture approach to separate each layer of the system flow,
 incrementing SOLID concepts, implementing some sub patterns as STRATEGY pattern, to solve the problem
 of different commands sent to the rover, which each one command has one action. And first of all,
-using Test-Driven Design (TDD) and tests FIRST (Fast, Independent, Repeatable, Self-Validating, Timely)
+using Test-Driven Design(TDD) and FIRST(Fast, Independent, Repeatable, Self-Validating, Timely)
 tests concept.
 
-## Setup
-
+## Usage
+Obs: Put the text file to input commands, in the root path of the project and execute the following command:
+    
+    $ yarn start filename.txt
 
 ## Test
     $ yarn test
