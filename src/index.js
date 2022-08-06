@@ -9,7 +9,9 @@ function main(filename) {
     Command.registerCommand('R', SpinRight)
     Command.registerCommand('M', Move)
     const runner = new RunCommands(filename)
-    runner.run().forEach(rover => console.log(...rover))
+    const response = runner.run()
+    response.forEach(item => console.log(item.join(', ')))
+    return response
 }
 
 module.exports = main
