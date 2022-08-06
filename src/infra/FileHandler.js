@@ -6,7 +6,7 @@ class FileHandler {
     #lines = []
     constructor(filepath) {
         if (!fs.existsSync(filepath)) throw new Error('File does not exists')
-        this.#file = fs.readFileSync(filepath, 'utf8')
+        this.#file = fs.readFileSync(filepath, 'utf-8')
         this.#lines = this.#file.split(/\n/)
     }
 

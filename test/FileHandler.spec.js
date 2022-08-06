@@ -1,12 +1,13 @@
 const fs = require('fs');
 const FileHandler = require("../src/infra/FileHandler");
+const filepath = './cmd.txt';
 
 beforeAll(() => {
-    fs.writeFileSync('./cmd.txt', "5 5\n1 2 N\nLLL\n3 3 E\nRRR");
+    fs.writeFileSync(filepath, "5 5\n1 2 N\nLLL\n3 3 E\nRRR");
 })
 
 test('should create a filehander', () => {
-    const filehandler = new FileHandler('./cmd.txt')
+    const filehandler = new FileHandler(filepath)
     expect(filehandler.getLines()).toHaveLength(5)
 })
 
@@ -15,5 +16,5 @@ test('should create a filehandler with a non-existent file', () => {
 });
 
 afterAll(() => {
-    fs.unlinkSync('./cmd.txt')
+    fs.unlinkSync(filepath)
 });
