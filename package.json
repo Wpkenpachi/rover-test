@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "make-badges": "istanbul-badges-readme",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "coverageReporters": ["json-summary"]
+  },
   "dependencies": {
+    "istanbul-badges-readme": "^1.8.2",
     "jest": "^28.1.3"
   }
 }
