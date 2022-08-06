@@ -4,7 +4,7 @@ const Coordinate = require("./Coordinate");
 class SpinRight extends Command {
     #coordinates
     constructor(coordinates) {
-        super()
+        super(coordinates)
         this.#coordinates = coordinates
     }
 
@@ -22,9 +22,6 @@ class SpinRight extends Command {
         
             case 'W':
                 return new Coordinate(x, y, 'N')
-            
-            default:
-                return new Coordinate(x, y, direction)
         }
     }
 }

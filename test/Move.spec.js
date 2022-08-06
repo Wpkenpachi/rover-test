@@ -8,3 +8,7 @@ test('should create a move command for all directions', () => {
     expect(new Move(new Coordinate(0, 1, 'S')).exec()).toEqual(new Coordinate(0, 0, 'S'))
     expect(new Move(new Coordinate(1, 0, 'W')).exec()).toEqual(new Coordinate(0, 0, 'W'))
 });
+
+test('should create a move command with invalid input', () => {
+    expect(() => new Move(1)).toThrowError('coordinates input must be instance of Coordinate')
+});

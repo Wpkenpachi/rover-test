@@ -1,10 +1,10 @@
 const Command = require("./Command");
 const Coordinate = require("./Coordinate");
 
-class Move  extends Command {
+class Move extends Command {
     #coordinates
     constructor(coordinates) {
-        super()
+        super(coordinates)
         this.#coordinates = coordinates
     }
 
