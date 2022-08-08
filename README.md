@@ -75,7 +75,7 @@ ___
 To solve this problem i used a clean architecture approach to separate each layer of the system flow,
 incrementing SOLID concepts, implementing some sub patterns as STRATEGY pattern, to solve the problem
 of different commands sent to the rover, which each one command has one action. And first of all,
-using Test-Driven Design(TDD) and FIRST(Fast, Independent, Repeatable, Self-Validating, Timely)
+using Test-Driven Development(TDD) and FIRST(Fast, Independent, Repeatable, Self-Validating, Timely)
 tests concept.
 
 ## Usage
